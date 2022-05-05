@@ -19,10 +19,10 @@ class LoadingPage extends StatelessWidget {
     );
   }
 
-   Future checkGpsLocation(BuildContext context) async{
+   Future checkGpsLocation( BuildContext context ) async{
 
 
-     await Future.delayed(const Duration( seconds: 4));
-     Navigator.pushReplacementNamed(context, navegarMapaFadeIn(context, const MapaPage() ) );
+     await Future.delayed( const Duration( seconds: 3 ));
+     Navigator.pushReplacement(context, navegarMapaFadeIn(context,  const MapaPage() ) );
    }
 }
