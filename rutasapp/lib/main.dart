@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MultiBlocProvider(
       providers: [
-        BlocProvider(create: (_) => MiUbicacionBloc()),
+        BlocProvider(create: (_) => MiUbicacionBloc())
       ],
       child: MaterialApp(
         title: 'Material App',

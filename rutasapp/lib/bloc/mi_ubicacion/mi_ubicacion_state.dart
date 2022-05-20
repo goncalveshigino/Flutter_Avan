@@ -7,7 +7,7 @@ class MiUbicacionState {
   final bool existeUbicacion;
   final LatLng ubicacion;
 
-MiUbicacionState({
+const MiUbicacionState({
   this.siguiendo = true,
    this.existeUbicacion = false,
     this.ubicacion
@@ -20,6 +20,6 @@ MiUbicacionState({
    }) =>  MiUbicacionState(
      siguiendo      :  siguiendo ?? this.siguiendo,
      existeUbicacion:  existeUbicacion ?? this.existeUbicacion,
-     ubicacion      :  ubicacion ?? this.ubicacion 
+     ubicacion      :  ubicacion ?? ubicacion 
    );
 }
